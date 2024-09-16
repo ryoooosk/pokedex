@@ -23,6 +23,11 @@ module.exports = {
 
   // Base config
   extends: ['eslint:recommended', 'prettier'],
+  plugins: ['unused-imports'],
+  rules: {
+    'unused-imports/no-unused-imports': 'warn',
+    'unused-imports/no-unused-vars': 'warn',
+  },
 
   overrides: [
     // React
@@ -71,6 +76,10 @@ module.exports = {
         'plugin:import/recommended',
         'plugin:import/typescript',
       ],
+      rules: {
+        // unused-importsを優先するためにoffにしている
+        '@typescript-eslint/no-unused-vars': 'off',
+      },
     },
 
     // Node
