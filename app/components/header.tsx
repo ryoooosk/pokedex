@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 export default function Header() {
   return (
-    <header className=" bg-yellow-400 text-white h-12 flex justify-between items-center px-5 w-full">
+    <header className=" bg-yellow-400 text-white h-12 flex justify-between items-center px-5 w-full sticky top-0 z-50">
       <Link to="/" className="text-red-600 font-bold tracking-wide text-lg">
         Pokedex demo
       </Link>
