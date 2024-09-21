@@ -2,7 +2,6 @@ import type { MetaFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import { NamedAPIResourceList, Pokemon, PokemonClient } from 'pokenode-ts';
 
-import Header from '~/components/header';
 import PokemonCarousel from '~/components/pokemon-carousel';
 
 import { getRandomUniqueNumbers } from '~/utils/get-random-unique-numbers';
@@ -35,11 +34,7 @@ export default function Index() {
 
   return (
     <>
-      <Header />
-
-      <main className="container m-auto p-5 mt-3">
-        <PokemonCarousel pokemons={pokemons.randomPokemons}></PokemonCarousel>
-      </main>
+      <PokemonCarousel pokemons={pokemons.randomPokemons}></PokemonCarousel>
     </>
   );
 }
