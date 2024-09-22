@@ -27,7 +27,7 @@ export default function PokemonCarousel({ pokemons }: { pokemons: Pokemon[] }) {
         {pokemons.map((pokemon, i) => (
           <CarouselItem key={i} className="basis-1/5">
             {/* // TODO: アクセシビリティ対策する/\ */}
-            <Link to={pokemon.id.toString()} className="inset-0">
+            <Link to={`/pokemon/${pokemon.id.toString()}`} className="inset-0">
               <PokemonCard pokemon={pokemon}></PokemonCard>
             </Link>
           </CarouselItem>

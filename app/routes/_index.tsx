@@ -8,7 +8,7 @@ import { getRandomUniqueNumbers } from '~/utils/get-random-unique-numbers';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
+    { title: 'Pokedex' },
     { name: 'description', content: 'Welcome to Remix!' },
   ];
 };
