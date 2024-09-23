@@ -49,7 +49,7 @@ export default function StatsChart({ stats }: { stats: PokemonStat[] }) {
   };
 
   return (
-    <ChartContainer config={chartConfig} className="min-h-52 min-w-60">
+    <ChartContainer config={chartConfig} className="min-h-52">
       <RadarChart data={getStatsData(stats)}>
         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
         <PolarAngleAxis
