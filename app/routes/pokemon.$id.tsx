@@ -1,7 +1,7 @@
 import { useLoaderData } from '@remix-run/react';
 import { Star } from 'lucide-react';
 import { PokemonClient } from 'pokenode-ts';
-import PreviousOrNextPageButton from '~/components/previous-or-next-pokemon-button';
+import PreviousOrNextPageButton from '~/components/ui/previous-or-next-button';
 import StatsChart from '~/components/stats-chart';
 import StatsDefinitionList from '~/components/stats-definition-list';
 import TypeLabel from '~/components/type-label';

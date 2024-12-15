@@ -1,8 +1,8 @@
 import { Link } from '@remix-run/react';
-import { Button } from './ui/button';
+import { Button } from './button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default function PreviousOrNextPokemonButton({
+export default function PreviousOrNextButton({
   currentPokemonId,
   direction,
 }: {
