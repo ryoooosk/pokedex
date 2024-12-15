@@ -34,9 +34,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-gray-50 min-h-dvh">
+      <body className="bg-gray-50 min-h-dvh flex flex-col">
         <Header />
-        <main className="container m-auto px-5 py-7">{children}</main>
+        <main className="container m-auto px-5 flex flex-col flex-grow">
+          {children}
+        </main>
         <ScrollRestoration />
         <Scripts />
         <Footer></Footer>
