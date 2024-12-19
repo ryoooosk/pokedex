@@ -13,7 +13,7 @@ export default function Header() {
         variant="ghost"
         className="h-8 font-semibold tracking-wide bg-slate-100 text-gray-950 hover:bg-white"
       >
-        SignUp
+        <Link to="/signup">SignUp</Link>
       </Button>
     </header>
   );
